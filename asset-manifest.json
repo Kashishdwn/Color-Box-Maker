@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Color-Box-Maker/static/css/main.e19581ef.chunk.css",
+    "main.js": "/Color-Box-Maker/static/js/main.216bc081.chunk.js",
+    "main.js.map": "/Color-Box-Maker/static/js/main.216bc081.chunk.js.map",
+    "runtime-main.js": "/Color-Box-Maker/static/js/runtime-main.471615af.js",
+    "runtime-main.js.map": "/Color-Box-Maker/static/js/runtime-main.471615af.js.map",
+    "static/js/2.95e222b9.chunk.js": "/Color-Box-Maker/static/js/2.95e222b9.chunk.js",
+    "static/js/2.95e222b9.chunk.js.map": "/Color-Box-Maker/static/js/2.95e222b9.chunk.js.map",
+    "index.html": "/Color-Box-Maker/index.html",
+    "precache-manifest.0f222cf4df910c40641e0bf12b098c0f.js": "/Color-Box-Maker/precache-manifest.0f222cf4df910c40641e0bf12b098c0f.js",
+    "service-worker.js": "/Color-Box-Maker/service-worker.js",
+    "static/css/main.e19581ef.chunk.css.map": "/Color-Box-Maker/static/css/main.e19581ef.chunk.css.map",
+    "static/js/2.95e222b9.chunk.js.LICENSE.txt": "/Color-Box-Maker/static/js/2.95e222b9.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.471615af.js",
+    "static/js/2.95e222b9.chunk.js",
+    "static/css/main.e19581ef.chunk.css",
+    "static/js/main.216bc081.chunk.js"
+  ]
+}
