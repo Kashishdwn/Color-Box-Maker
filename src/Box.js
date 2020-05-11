@@ -9,7 +9,7 @@ class Box extends React.Component{
                     width:`${this.props.width}em`
                 }}>
                 </div>
-                <button>Remove Box</button>
+                <button onClick={this.props.removeBox}>Remove Box</button>
             </div>
         )
     }
