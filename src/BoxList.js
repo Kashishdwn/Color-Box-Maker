@@ -6,20 +6,31 @@ class BoxList extends React.Component{
         super(props);
         this.state={
             boxes:[
-                {height:40,width:10,color:"purple"}
+                // {height:40,width:10,color:"purple"}
             ]
         }
     }
+    remove=(id)=>{
+        this.setState({
+            boxes:this.state.boxes.filter(box=>box.id!==id)
+        })
+    }
     submit=(newBox)=>{
-        // alert(height+" "+width+" "+color);
         this.setState({
             boxes:[...this.state.boxes, newBox]
         });
     }
     render(){
-        const boxes=this.state.boxes.map(box=>(<Box width={box.width} height={box.height} color={box.color}/>))
+        const boxes=this.state.boxes.map(box=>(<Box 
+            id={box.id} 
+            key={box.id} 
+            width={box.width} 
+            height={box.height} 
+            color={box.color} 
+            removeBox={()=>this.remove(box.id)}/>))
         return(
             <div>
+                <h1>Color Box Maker</h1>
                 <NewBoxForm submit={this.submit}/>
                 {boxes}
             </div>
