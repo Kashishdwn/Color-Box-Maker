@@ -2,7 +2,14 @@ import React from 'react'
 class Box extends React.Component{
     render(){
         return(
-            <div style={{backgroundColor:this.props.color,height:this.props.height,width:this.props.width}}>
+            <div>
+                <div style={{
+                    backgroundColor:this.props.color,
+                    height:`${this.props.height}em`,
+                    width:`${this.props.width}em`
+                }}>
+                </div>
+                <button>Remove Box</button>
             </div>
         )
     }
