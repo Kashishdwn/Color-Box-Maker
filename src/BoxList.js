@@ -5,26 +5,23 @@ class BoxList extends React.Component{
     constructor(props){
         super(props);
         this.state={
-            height:"",
-            width:"",
-            color:""
+            boxes:[
+                {height:40,width:10,color:"purple"}
+            ]
         }
     }
-    submit=(height1,width1,color1)=>{
+    submit=(newBox)=>{
         // alert(height+" "+width+" "+color);
-        this.setState(st=>(
-            {
-                height:height1,
-                width:width1,
-                color:color1
-            }
-        ));
+        this.setState({
+            boxes:[...this.state.boxes, newBox]
+        });
     }
     render(){
+        const boxes=this.state.boxes.map(box=>(<Box width={box.width} height={box.height} color={box.color}/>))
         return(
             <div>
                 <NewBoxForm submit={this.submit}/>
-                <Box height={this.state.height} width={this.state.width} color={this.state.color}/>
+                {boxes}
             </div>
         )
     }
